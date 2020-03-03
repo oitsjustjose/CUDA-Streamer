@@ -14,6 +14,6 @@
 
 5. `make` (this may take a while, go get some coffee 🙂)
 
-6. Move FFPMEG to your `bin` to make it always accessible: `sudo mv ./ffmpeg /usr/local/bin/ffmpeg`
+6. `make install`
 
 7. Test using `ffmpeg -y -hwaccel cuvid -c:v h264_cuvid -vsync 0 -i <input.mp4> -vf scale_npp=1920:1072 -vcodec h264_nvenc <output0.264> -vf scale_npp=1280:720 -vcodec h264_nvenc <output1.264>`
